@@ -1,17 +1,15 @@
 import React from "react";
 import Container from "../Containers/Container";
 import { ChangeOnCLickButton, OrangeButton } from "../Components/AllButton";
+import CustomProgressBar from "../Components/CustomProgressBar";
+import Hero from "../Sections/HomePage/Hero";
 
 const Home = () => {
   return (
     <div>
       <Container>
-        <OrangeButton innerText={"Download CV"} />
+        <Hero/>
       </Container>
-
-      <ChangeOnCLickButton
-      innerText={"onclick change"}
-      />
     </div>
   );
 };
