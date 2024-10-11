@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HMediumText, NormalText } from "../../Components/AllTextType";
 import { ChangeOnCLickButton } from "../../Components/AllButton";
 import ProjectCards from "../../Components/ProjectCards";
+import img0 from "../../assets/webPics/Web Designs.png";
+import img1 from "../../assets/webPics/Web Designs (1).png";
+import img2 from "../../assets/webPics/Web Designs (2).png";
+import img3 from "../../assets/webPics/Web Designs (3).png";
+import img4 from "../../assets/webPics/Web Designs (4).png";
+import img5 from "../../assets/webPics/Web Designs (5).png";
 
 const MyProjects = () => {
   const [selectedButton, setSelectedButton] = useState("All");
+  const [showProject, setShowProject] = useState([]);
+
   const catagories = [
     "All",
     "UI/UX",
@@ -12,6 +20,89 @@ const MyProjects = () => {
     "App Design",
     "Graphic Design",
   ];
+  const allProjects = [
+    {
+      catagory: "UI/UX",
+      projects: [
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img0,
+          img2: img1,
+        },
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img2,
+          img2: img3,
+        },
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img4,
+          img2: img5,
+        },
+      ],
+    },
+    {
+      catagory: "Web Design",
+      projects: [
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img0,
+          img2: img1,
+        },
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img2,
+          img2: img3,
+        },
+      ],
+    },
+    {
+      catagory: "App Design",
+      projects: [
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img2,
+          img2: img3,
+        },
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img4,
+          img2: img5,
+        },
+      ],
+    },
+    {
+      catagory: "Graphic Design",
+      projects: [
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img0,
+          img2: img1,
+        },
+        {
+          projectName: "AirCalling Landing Page Design ",
+          img1: img4,
+          img2: img5,
+        },
+      ],
+    },
+  ];
+
+  useEffect(() => {
+    if (selectedButton !== "All") {
+      allProjects.map((project) => {
+        if (project.catagory === selectedButton) {
+          setShowProject(project?.projects);
+        }
+      });
+    } else {
+      const viewProjectList = [];
+      allProjects.map((project) => {
+        viewProjectList.push(...project.projects);
+      });
+      setShowProject(viewProjectList);
+    }
+  }, [selectedButton]);
 
   return (
     <div className="mt-[135px]">
@@ -39,8 +130,12 @@ const MyProjects = () => {
           </div>
         </div>
 
-        <div>
-          <ProjectCards/>
+        <div className="flex flex-wrap gap-11 justify-center">
+          {showProject.map((eachProject, index) => (
+            <div key={index}>
+              <ProjectCards />
+            </div>
+          ))}
         </div>
       </div>
     </div>
