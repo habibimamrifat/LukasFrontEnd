@@ -27,7 +27,7 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div className="flex mt-[65px]">
+    <div className="flex mt-[65px]" id="About Me">
       <div className="flex-1">
         <img src={img2} alt="" />
       </div>

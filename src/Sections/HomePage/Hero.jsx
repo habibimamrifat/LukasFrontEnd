@@ -10,7 +10,7 @@ import pic1 from "../../assets/imgs/Group 2.png";
 
 const Hero = () => {
   return (
-    <div className="flex">
+    <div className="flex" id="Home">
       <div className="flex-1 flex flex-col justify-center ">
         <SmallBoldText innerText={"Hi I am "} />
 

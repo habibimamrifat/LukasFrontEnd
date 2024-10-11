@@ -6,6 +6,8 @@ import Hero from "../Sections/HomePage/Hero";
 import AboutMe from "../Sections/HomePage/AboutMe"
 import Services from "../Sections/HomePage/Services";
 import MyProjects from "../Sections/HomePage/MyProjects";
+import ContactMe from "../Sections/HomePage/ContactMe";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
         <AboutMe/>
         <Services/>
         <MyProjects/>
+        <ContactMe/>
+        <Footer/>
       </Container>
     </div>
   );

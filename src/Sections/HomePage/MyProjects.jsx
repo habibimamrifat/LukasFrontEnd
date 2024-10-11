@@ -25,19 +25,22 @@ const MyProjects = () => {
       catagory: "UI/UX",
       projects: [
         {
+          catagory: "UI/UX",
           projectName: "AirCalling Landing Page Design ",
-          img1: img0,
-          img2: img1,
+          imgfirst: img0,
+          imgSecond: img1,
         },
         {
+          catagory: "UI/UX",
           projectName: "AirCalling Landing Page Design ",
-          img1: img2,
-          img2: img3,
+          imgfirst: img2,
+          imgSecond: img3,
         },
         {
+          catagory: "UI/UX",
           projectName: "AirCalling Landing Page Design ",
-          img1: img4,
-          img2: img5,
+          imgfirst: img4,
+          imgSecond: img5,
         },
       ],
     },
@@ -45,14 +48,16 @@ const MyProjects = () => {
       catagory: "Web Design",
       projects: [
         {
+          catagory: "Web Design",
           projectName: "AirCalling Landing Page Design ",
-          img1: img0,
-          img2: img1,
+          imgfirst: img0,
+          imgSecond: img1,
         },
         {
+          catagory: "Web Design",
           projectName: "AirCalling Landing Page Design ",
-          img1: img2,
-          img2: img3,
+          imgfirst: img2,
+          imgSecond: img3,
         },
       ],
     },
@@ -60,14 +65,16 @@ const MyProjects = () => {
       catagory: "App Design",
       projects: [
         {
+          catagory: "App Design",
           projectName: "AirCalling Landing Page Design ",
-          img1: img2,
-          img2: img3,
+          imgfirst: img2,
+          imgSecond: img3,
         },
         {
+          catagory: "App Design",
           projectName: "AirCalling Landing Page Design ",
-          img1: img4,
-          img2: img5,
+          imgfirst: img4,
+          imgSecond: img5,
         },
       ],
     },
@@ -75,14 +82,16 @@ const MyProjects = () => {
       catagory: "Graphic Design",
       projects: [
         {
+          catagory: "Graphic Design",
           projectName: "AirCalling Landing Page Design ",
-          img1: img0,
-          img2: img1,
+          imgfirst: img0,
+          imgSecond: img1,
         },
         {
+          catagory: "Graphic Design",
           projectName: "AirCalling Landing Page Design ",
-          img1: img4,
-          img2: img5,
+          imgfirst: img4,
+          imgSecond: img5,
         },
       ],
     },
@@ -105,7 +114,7 @@ const MyProjects = () => {
   }, [selectedButton]);
 
   return (
-    <div className="mt-[135px]">
+    <div className="mt-[135px]" id="Projects">
       <div className="text-center">
         <HMediumText innerText={"My Projects"} />
         <div className="mt-[35px]">
@@ -130,10 +139,15 @@ const MyProjects = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-11 justify-center">
+        <div className="flex flex-wrap gap-11 justify-center mt-[106px]">
           {showProject.map((eachProject, index) => (
             <div key={index}>
-              <ProjectCards />
+              <ProjectCards
+                imgOne={eachProject.imgSecond}
+                imgTwo={eachProject.imgSecond}
+                catagory={eachProject.catagory}
+                projectName={eachProject.projectName}
+              />
             </div>
           ))}
         </div>

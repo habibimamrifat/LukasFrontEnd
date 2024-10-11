@@ -34,7 +34,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="mt-[65px]">
+    <div className="mt-[65px]" id="Services">
       <div className="text-center">
         <HMediumText innerText={"Services"} />
         <div className="mt-[35px]">
@@ -51,6 +51,7 @@ const Services = () => {
               img={service.img}
               name={service.name}
               detail={service.detail}
+              key={index}
             />
           ))}
           {/* <ServiceCard /> */}
