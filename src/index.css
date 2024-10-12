@@ -17,9 +17,11 @@
   opacity: 0.5;
 }
 .swiper-pagination-bullet {
+ background-color: #D9D9D9 !important;
   width: 57px !important;
   height: 16px !important;
   border-radius: 8px !important;
+  mix-blend-mode: difference !important;
 }
 .swiper-pagination-bullet-active {
   background-color: #fd6f00 !important;

@@ -4,13 +4,10 @@ import { GiNightSky } from "react-icons/gi";
 
 const DarkLightToggler = () => {
 
-  const [rotationAngle, setRotationAngle] = useState(0);
+ 
   const [mode, setMode] = useState("day");
 
-  const rotateAndToggleMode = () => {
-    setRotationAngle(rotationAngle + 180);
-    setMode(mode === "day" ? "night" : "day");
-  };
+
   
   return (
     <div className="w-[50px] h-[50px]  rounded-full  items-center relative overflow-hidden ms-5"
