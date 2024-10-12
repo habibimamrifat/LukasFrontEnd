@@ -1,6 +1,6 @@
 const OrangeButton = ({ innerText }) => {
   return (
-    <div className="w-full h-full bg-[#FD6F00] flex justify-center items-center text-white font-light text-xl leading-8 rounded-md">
+    <div className="w-full h-full bg-[#FD6F00] flex justify-center items-center text-white font-light text-xl leading-8 rounded-md dark:bg-[#FD6F00]">
       {innerText}
     </div>
   );

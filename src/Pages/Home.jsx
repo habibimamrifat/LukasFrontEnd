@@ -7,10 +7,12 @@ import MyProjects from "../Sections/HomePage/MyProjects";
 import ContactMe from "../Sections/HomePage/ContactMe";
 import Footer from "../Components/Footer";
 import Testimonial from "../Sections/HomePage/Testimonial";
+import NavBar from "../Components/NavBar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="dark:bg-black">
+      <NavBar/>
       <Container>
         <Hero/>
         <AboutMe/>
@@ -18,8 +20,8 @@ const Home = () => {
         <MyProjects/>
         <Testimonial/>
         <ContactMe/>
-        <Footer/>
       </Container>
+      <Footer/>
     </div>
   );
 };
