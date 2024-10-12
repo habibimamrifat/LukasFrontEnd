@@ -18,7 +18,7 @@ const ChangeOnCLickButton = ({
         id === selectedButton
           ? "bg-[#FD6F00] text-white border-[#FD6F00]"
           : "bg-[#F8F8F8] text-black border-[1px]"
-      } transition-all duration-500`}
+      } transition-all duration-500 cursor-pointer`}
       onClick={() => setSelectedButton(id)}
     >
       <p className="mx-[20px]">{innerText}</p>

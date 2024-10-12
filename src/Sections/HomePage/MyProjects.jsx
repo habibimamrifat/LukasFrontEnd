@@ -59,6 +59,12 @@ const MyProjects = () => {
           imgfirst: img2,
           imgSecond: img3,
         },
+        {
+          catagory: "UI/UX",
+          projectName: "AirCalling Landing Page Design ",
+          imgfirst: img4,
+          imgSecond: img5,
+        },
       ],
     },
     {
