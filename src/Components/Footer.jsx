@@ -7,7 +7,7 @@ import Container from "../Containers/Container";
 const Footer = () => {
   return (
     <Container>
-      <div className="w-full mt-[135px] bg-[#F8F8F8] dark:bg-transparent">
+      <div className="w-full mt-[135px] bg-footerBodyBg dark:bg-transparent">
       <div className="flex flex-col items-center pt-[105px] pb-[60px]">
 
 
@@ -26,7 +26,7 @@ const Footer = () => {
         <SocialHandlels />
       </div>
 
-      <div className="w-full bg-[#545454] h-[84px] flex justify-center items-center">
+      <div className="w-full bg-footerBg h-[84px] flex justify-center items-center">
         <p className="text-[21px] text-white">© 2023 <span className="text-[#FD6F00]">Mumair All</span> Rights Reserved , Inc.</p>
       </div>
     </div>

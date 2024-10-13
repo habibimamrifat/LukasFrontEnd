@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import { WiDaySunnyOvercast } from "react-icons/wi";
 import { GiNightSky } from "react-icons/gi";
 
-const DarkLightToggler = () => {
-
- 
-  const [mode, setMode] = useState("day");
-
-
-  
+const DarkLightToggler = ({mode,setMode}) => {
+   
   return (
     <div className="w-[50px] h-[50px]  rounded-full  items-center relative overflow-hidden ms-5"
     style={{ boxShadow: 'inset 0 4px 8px rgba(0, 0, 0, 0.6)' }}

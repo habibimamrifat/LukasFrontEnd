@@ -3,7 +3,7 @@ import { FaFacebook,FaTwitter,FaInstagram,FaLinkedin } from "react-icons/fa";
 
 const SocialHandlels = () => {
   return (
-    <div className='flex gap-6 dark:text-white'>
+    <div className='flex gap-6 dark:text-white text-textColor'>
       <FaFacebook className='h-6 w-6' />
       <FaTwitter className='h-6 w-6'/>
       <FaInstagram className='h-6 w-6' />

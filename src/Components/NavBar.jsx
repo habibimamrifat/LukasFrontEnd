@@ -5,7 +5,7 @@ import MenuOptions from "./MenuOptions";
 import { OrangeButton } from "./AllButton";
 import DarkLightToggler from "./DarkLightToggler";
 
-const NavBar = () => {
+const NavBar = ({mode,setMode}) => {
   return (
     <div className="mb-[128px] mt-[60px]">
       <Container>
@@ -22,7 +22,10 @@ const NavBar = () => {
                 </span>
               </h2>
             </div>
-          <DarkLightToggler/>
+          <DarkLightToggler
+          mode={mode}
+          setMode={setMode}
+          />
           </div>
           <div className="flex items-center gap-[35px]">
             <MenuOptions />
