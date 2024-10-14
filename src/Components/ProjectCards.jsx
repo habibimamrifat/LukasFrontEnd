@@ -3,7 +3,7 @@ import { SmallBoldText } from "./AllTextType";
 
 const ProjectCards = ({imgOne,imgTwo,catagory,projectName}) => {
   return (
-    <div className="w-[445px] h-[601px]">
+    <div className="lg:w-[445px] h-[601px]">
       <div className="w-full h-[489px] bg-[#FFEBDB] relative overflow-hidden rounded-xl">
         <div className="h-full w-[274px] bg-blue-500 absolute right-7">
             <img src={imgOne} alt="" />

@@ -10,7 +10,8 @@ import pic1 from "../../assets/imgs/Group 2.png";
 
 const Hero = () => {
   return (
-    <div className="flex" id="Home">
+    <div className="flex gap-5 flex-col-reverse md:flex-row " id="Home">
+
       <div className="flex-1 flex flex-col justify-center ">
         <SmallBoldText innerText={"Hi I am "} />
 
@@ -38,12 +39,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex-1 flex flex-col justify-center items-center ">
+      <div className="flex-1 flex flex-col justify-center items-center mb-10 md:mb-0">
         <img src={pic1} alt="" />
         <div className="mt-5">
           <SocialHandlels />
         </div>
       </div>
+
     </div>
   );
 };

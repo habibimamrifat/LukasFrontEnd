@@ -5,7 +5,7 @@ import { GiNightSky } from "react-icons/gi";
 const DarkLightToggler = ({mode,setMode}) => {
    
   return (
-    <div className="w-[50px] h-[50px]  rounded-full  items-center relative overflow-hidden ms-5"
+    <div className="w-[50px] h-[40px] rounded-full  items-center relative overflow-hidden"
     style={{ boxShadow: 'inset 0 4px 8px rgba(0, 0, 0, 0.6)' }}
     >
       <div

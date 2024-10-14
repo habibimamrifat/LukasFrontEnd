@@ -7,28 +7,28 @@ const NormalText = ({ innerText,position }) => {
 };
 const HightLightText = ({ innerText }) => {
   return (
-    <div className="font-bold text-[100px] leading-[135px] text-textColor">
+    <div className="font-bold text-5xl lg:text-[100px] lg:leading-[135px] text-textColor">
       {innerText}
     </div>
   );
 };
 const HMediumText = ({ innerText }) => {
   return (
-    <div className="font-semibold text-[65px] leading-8 text-textColor">
+    <div className="font-semibold text-3xl lg:text-[65px] lg:leading-8 text-textColor">
       {innerText}
     </div>
   );
 };
 const HSmallText = ({ innerText,position }) => {
   return (
-    <div className={`font-semibold text-[32px] leading-8 ${position === "service"? "text-black":"text-textColor"}`}>
+    <div className={`font-semibold text-xl lg:text-[32px] leading-8 ${position === "service"? "text-black":"text-textColor"}`}>
       {innerText}
     </div>
   );
 };
 const SmallBoldText = ({ innerText }) => {
   return (
-    <div className="font-semibold text-[24px] leading-8 text-textColor">
+    <div className="font-semibold text-xl lg:text-[24px] leading-8 text-textColor">
       {innerText}
     </div>
   );

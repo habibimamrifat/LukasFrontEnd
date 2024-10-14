@@ -123,7 +123,7 @@ const MyProjects = () => {
     <div className="mt-[135px]" id="Projects">
       <div className="text-center">
         <HMediumText innerText={"My Projects"} />
-        <div className="mt-[35px]">
+        <div className="mt-[35px] max-w-[932px] mx-auto">
           <NormalText
             innerText={
               "Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus"
@@ -132,7 +132,7 @@ const MyProjects = () => {
         </div>
 
         <div className="mt-[65px]">
-          <div className="w-full flex gap-5 justify-center">
+          <div className="w-full flex gap-5 justify-center flex-wrap">
             {catagories.map((catagory, index) => (
               <ChangeOnCLickButton
                 innerText={catagory}

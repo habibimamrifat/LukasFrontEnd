@@ -27,12 +27,12 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div className="flex mt-[65px]" id="About Me">
-      <div className="flex-1">
+    <div className="flex mt-[65px] flex-col md:flex-row" id="About Me">
+      <div className="md:flex-1">
         <img src={img2} alt="" />
       </div>
-      <div className="flex-1 flex flex-col justify-center">
-        <div className="mb-[35px]">
+      <div className="mt-10 md:mt-0 md:flex-1 flex flex-col justify-center">
+        <div className="mb-[35px] text-center md:text-start">
           <HMediumText innerText={"About Me"} />
         </div>
 

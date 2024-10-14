@@ -4,7 +4,7 @@ import { NormalText } from "./AllTextType";
 
 const SliderCard = ({ img, name,designation,testimoni }) => {
   return (
-    <div className="bg-[#F8F8F8] rounded-[14px] w-[1087px] h-[344px] flex items-center justify-center gap-8 px-[44px] mx-auto">
+    <div className="bg-[#F8F8F8] rounded-[14px] lg:w-[1087px] md:h-[344px] flex flex-col md:flex-row items-center justify-center gap-8 px-[44px] mx-auto">
       <img src={img} alt="" className="w-[235px] h-[235px] rounded-full" />
       <div>
         <p className="relative text-left">
