@@ -29,7 +29,10 @@ const AboutMe = () => {
   return (
     <div className="flex mt-[65px] flex-col md:flex-row" id="About Me">
       <div className="md:flex-1">
-        <img src={img2} alt="" />
+      <div className="relative flex justify-center">
+          <img src={img2} alt="" />
+          <div className="h-[50px] md:h-[50px] lg:h-[60px] w-[70%] md:w-[374px] bg-[#FD6F0099] absolute top-[15%] md:top-[15%]"></div>
+        </div>
       </div>
       <div className="mt-10 md:mt-0 md:flex-1 flex flex-col justify-center">
         <div className="mb-[35px] text-center md:text-start">

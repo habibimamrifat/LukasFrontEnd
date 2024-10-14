@@ -11,7 +11,6 @@ import pic1 from "../../assets/imgs/Group 2.png";
 const Hero = () => {
   return (
     <div className="flex gap-5 flex-col-reverse md:flex-row " id="Home">
-
       <div className="flex-1 flex flex-col justify-center ">
         <SmallBoldText innerText={"Hi I am "} />
 
@@ -40,12 +39,14 @@ const Hero = () => {
       </div>
 
       <div className="flex-1 flex flex-col justify-center items-center mb-10 md:mb-0">
-        <img src={pic1} alt="" />
+        <div className="relative flex justify-center">
+          <img src={pic1} alt="" />
+          <div className="h-[50px] md:h-[60px] lg:h-[83px] w-[70%] md:w-[374px] bg-[#FD6F0099] absolute top-[15%] md:top-[10%]"></div>
+        </div>
         <div className="mt-5">
           <SocialHandlels />
         </div>
       </div>
-
     </div>
   );
 };
