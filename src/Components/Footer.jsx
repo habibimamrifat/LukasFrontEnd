@@ -1,35 +1,41 @@
 import React from "react";
 import MenuOptions from "./MenuOptions";
 import SocialHandlels from "./SocialHandlels";
-import logo from "../assets/logos/Subtract.png";
+import logo from "../assets/logos/dayLogo.png";
+import logo2 from "../assets/logos/darkLogo.png";
 import Container from "../Containers/Container";
 
-const Footer = () => {
+const Footer = ({ mode }) => {
   return (
     <Container>
       <div className="w-full mt-[135px] bg-footerBodyBg dark:bg-transparent">
-      <div className="flex flex-col items-center pt-[105px] pb-[60px]">
+        <div className="flex flex-col items-center pt-[105px] pb-[60px]">
+          <div className="mb-[80px]">
+            <img
+              src={logo}
+              alt=""
+              className={` ${mode === "day" ? "block" : "hidden"} `}
+            />
+            <img
+              src={logo2}
+              alt=""
+              className={` ${mode === "day" ? "hidden" : "block"} `}
+            />
+          </div>
 
-
-        <div className="flex items-center justify-center gap-5 mb-[80px] tracking-widest">
-        <img src={logo} alt="" className="" />
-        <h2>
-          <span className="font-bold text-[48px] text-black dark:text-white">M</span>
-          <span className="font-normal text-[48px] text-[#545454] dark:text-white">umair</span>
-        </h2>
+          <div className="mb-[80px]">
+            <MenuOptions />
+          </div>
+          <SocialHandlels />
         </div>
 
-        
-        <div className="mb-[80px]">
-          <MenuOptions />
+        <div className="w-full bg-footerBg h-[84px] flex justify-center items-center">
+          <p className="text-[21px] text-white">
+            © 2023 <span className="text-[#FD6F00]">Mumair All</span> Rights
+            Reserved , Inc.
+          </p>
         </div>
-        <SocialHandlels />
       </div>
-
-      <div className="w-full bg-footerBg h-[84px] flex justify-center items-center">
-        <p className="text-[21px] text-white">© 2023 <span className="text-[#FD6F00]">Mumair All</span> Rights Reserved , Inc.</p>
-      </div>
-    </div>
     </Container>
   );
 };
