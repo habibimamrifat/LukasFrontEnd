@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  -webkit-scroll-behavior: smooth; /* Safari/Chrome */
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
 .light
 {
   --bodyBg:255, 255, 255;

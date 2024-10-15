@@ -43,7 +43,9 @@ const SideBar = ({ isSideBarOpen, setIsSideBarOpen, mode, setMode }) => {
       {/* Scrollable Menu Options */}
       <div className="w-full h-[calc(100%-80px)] overflow-y-auto  pb-[100px] mt-5">
         <div className="flex flex-col items-center">
-          <MenuOptions position={"sideBar"} />
+          <MenuOptions position={"sideBar"} 
+          setIsSideBarOpen={setIsSideBarOpen}
+          />
           <div className="mt-10 w-[144px] h-[55px]">
             <OrangeButton innerText={"Download CV"} />
           </div>
